@@ -1,0 +1,16 @@
+{
+  "name": "hotel-project",
+  "version": "1.0.0",
+  "description": "A full-stack hotel booking platform built with the MERN stack. Users can explore hotels, view rooms, check availability, and make reservations. Admins manage rooms, bookings, and users through a secure dashboard. Includes authentication, filtering, and real-time booking features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

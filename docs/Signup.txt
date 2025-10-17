@@ -1,0 +1,29 @@
+POST /api/auth/signup
+
+Request Body (JSON)
+{
+    'username',
+    'email'
+    'password'
+}
+
+Response (Success)
+{
+    redirect to the login page
+}
+
+Response (Faild)
+{
+    message[] :
+    [
+        username already exist,
+        username must be atleast 3 characters
+        password must be atleast 8 characters,
+        password must include a capital letter,
+        password must include a small letter,
+        password must include a number
+        email is not verified
+    ]
+    // will include one or more from those
+    // color red
+}

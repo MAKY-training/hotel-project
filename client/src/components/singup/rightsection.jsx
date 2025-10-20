@@ -17,15 +17,15 @@ export default function Rightsection() {
       <div id="inputs">
         <div className="order">
           <label htmlFor="username">username</label>
-          <input type="text" name="username" id="input" />
+          <input type="text" id="username" name="username" className="input" />
         </div>
         <div className="order">
           <label htmlFor="email">email</label>
-          <input type="email" name="email" id="input" />
+          <input type="email" id="email" name="email" className="input" />
         </div>
         <div className="order">
           <label htmlFor="password">password</label>
-          <input type="password" id="input" />
+          <input type="password" id="password" className="input" />
         </div>
       </div>
 

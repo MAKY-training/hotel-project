@@ -2,12 +2,10 @@ import Leftsection from "./leftsection";
 import Rightsection from "./rightsection";
 export default function Signup(){
     return (
-        <body>
-        <div className="contaier">
+        <div className="container">
             <Leftsection/>
             <Rightsection/>
         </div>
-        </body>
 
 
     );

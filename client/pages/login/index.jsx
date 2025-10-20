@@ -1,14 +1,14 @@
 // src/pages/Login/index.jsx
- 
+
 import Sidebar from './components/Sidebar';
 import LoginForm from './components/LoginForm';
 
-function LoginPage() {
+function LoginPage({ handlePageSwitch }) {
   return (
-// The main page container (applies Grid division from index.css)
+    // The main page container (applies Grid division from index.css)
     <div className="login-page-container">
       <Sidebar />
-      <LoginForm />
+      <LoginForm handlePageSwitch={handlePageSwitch} />
     </div>
   );
 }

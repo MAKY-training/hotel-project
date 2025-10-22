@@ -7,12 +7,12 @@ Request Body (JSON)
     'password'
 }
 
-Response (Success)
+Response (success = true)
 {
     redirect to the login page
 }
 
-Response (Faild)
+Response (success = true)
 {
     message[] :
     [

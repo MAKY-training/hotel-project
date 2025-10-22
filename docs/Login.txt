@@ -2,19 +2,18 @@ POST /api/auth/login
 
 Request Body (JSON)
 {
-    'username',
+    'email',
     'password'
 }
 
-Response (Success)
+Response (success = true)
 {
     'message' : "Welcome" // color green
     redirect to the home page
 }
 
-Response (Faild)
+Response (success = false)
 {
-    'message' : 'username or password is not correct'
-    // will include one or more from those
+    'message' : 'email or password is not correct'
     // color red
 }

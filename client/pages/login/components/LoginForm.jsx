@@ -3,7 +3,7 @@ import eyeRegular from '../../images/eye-regular.svg';
 import eyeSlashRegular from '../../images/eye-slash-regular.svg';
 
 // Component that contains the login form
-function LoginForm() {
+function LoginForm({ handlePageSwitch }) {
   // 1. Basic form states
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -120,7 +120,14 @@ function LoginForm() {
 
           {/* Sign Up link styling */}
           <p className="signup-prompt">
-            No Account yet? <a href="#" className="signup-link">SIGN UP</a>
+            No Account yet?{" "}
+            <button
+              type="button"
+              className="inline-link-btn"
+              onClick={() => handlePageSwitch("signup")}
+            >
+              SIGN UP
+            </button>
           </p>
 
         </form>

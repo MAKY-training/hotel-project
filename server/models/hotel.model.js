@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const hotelSchema = new mongoose.Schema({
 
-    name: {
+    hotelName: {
         type: String,
         required: true
     },
@@ -31,12 +31,12 @@ const hotelSchema = new mongoose.Schema({
         required: true
     },
 
-    pet: {
-        type: Number,
+    petFriendly: {
+        type: Boolean,
         required: true
     },
 
-    pricePerNight: {
+    price: {
         type: Number,
         required: true
     },

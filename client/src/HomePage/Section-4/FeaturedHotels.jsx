@@ -21,14 +21,14 @@ export default function FeaturedHotels() {
                 allHotels.map((hotel) => (
                     <AllHotel
                         key={hotel._id}
-                        name={hotel.name}
+                        name={hotel.hotelName}
                         city={hotel.city}
                         location={hotel.location}
-                        price={hotel.pricePerNight}
+                        price={hotel.price}
                         bed={hotel.rooms}
                         bath={hotel.bathrooms}
                         car={hotel.parking}
-                        paw={hotel.pet}
+                        paw={hotel.petFriendly}
                     />
                 ))
             )}

@@ -21,7 +21,7 @@ export default function Hotels() {
                     
                     <LastHotel
                         key={hotel._id}
-                        name={hotel.name}
+                        name={hotel.hotelName}
                         city={hotel.city}
                         location={hotel.location}
                     />

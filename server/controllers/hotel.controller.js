@@ -2,9 +2,9 @@ import Hotel from "../models/hotel.model.js";
 export const createHotels = async (req, res) => {
     // res.send("Create Hotel route");    
     try {
-        const { name, location, city, rooms, bathrooms, parking, pet, pricePerNight } = req.body;
+        const { hotelName, location, city, rooms, bathrooms, parking, petFriendly, price } = req.body;
 
-        if (!name || !location || !city || !rooms || !bathrooms || !parking || !pet || !pricePerNight) {
+        if (!hotelName || !location || !city || !rooms || !bathrooms || !parking || !petFriendly || !price) {
             return res.status(400).json({ message: "All fields are required" });
         }
         const newHotel = new Hotel(req.body);

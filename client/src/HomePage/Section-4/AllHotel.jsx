@@ -16,11 +16,11 @@ function Stat({ icon, value }) {
 export default function AllHotel({ name, city, location , price , bed , bath , car , paw}) {
     return (
         <div>
-            <HotelsCard imageSrc="https://picsum.photos/500/400" onFavorite={() => {}}>
+            <HotelsCard imageSrc="https://fastly.picsum.photos/id/789/500/400.jpg?hmac=lYCmjOVn6Go2WtrWMtA9P0pLBBQNW3TX1hTEOrfmgjo" onFavorite={() => {}}>
         <div className="flex flex-col gap-4">
           <div className="w-20 h-20 rounded-full overflow-hidden">
             <img
-              src="https://picsum.photos/500/400"
+              src="https://fastly.picsum.photos/id/789/500/400.jpg?hmac=lYCmjOVn6Go2WtrWMtA9P0pLBBQNW3TX1hTEOrfmgjo"
               alt="Host"
               className="w-full h-full object-cover"
             />

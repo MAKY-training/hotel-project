@@ -6,16 +6,16 @@ import HomePage from "./HomePage/HomePage";
 import CreateHotels from "./CreateHotels/CreateHotels";
 import { Toaster } from "react-hot-toast";
 function App() {
-  // const [isLoginPage, setIsLoginPage] = useState(false);
-  // function handlePageSwitch(page) {
-  //   setIsLoginPage(page === "login");
-  
+  const [isLoginPage, setIsLoginPage] = useState(false);
+  function handlePageSwitch(page) {
+    setIsLoginPage(page === "login");
+  }
   return (
     <>
-      {/* {isLoginPage ? <LoginPage handlePageSwitch={handlePageSwitch} /> : <Signup handlePageSwitch={handlePageSwitch} />} */}
+      {isLoginPage ? <LoginPage handlePageSwitch={handlePageSwitch} /> : <Signup handlePageSwitch={handlePageSwitch} />}
 
       <Toaster position="top-right" />
-      <LoginPage />
+      {/* <HomePage /> */}
     </>
   );
 }
